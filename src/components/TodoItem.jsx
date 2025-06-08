@@ -10,7 +10,12 @@ const TodoItem = (props) => {
                 {props.todoDate}
             </div>
             <div className="col-2">
-                <MdDelete onClick={() => {props.handleDeleteBtn(props.todoName)}}/>
+                <MdDelete
+                 size={28}
+                 onClick={() => {props.handleDeleteBtn(props.todoName)}}
+                 style={{ cursor: "pointer", color: "#007bff" }}
+                 title="Delete Todo"
+                 />
                 {/* <button type="button" className="btn btn-danger" onClick={() => {props.handleDeleteBtn(props.todoName)}}>Delete</button> */}
             </div>
         </div><br/>
